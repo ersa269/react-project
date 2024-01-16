@@ -1,0 +1,80 @@
+/* Add these keyframe animations */
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Your existing styles */
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.worksTittle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.worksDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+}
+
+.worksImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+    flex-wrap: wrap;
+}
+
+.worksImg {
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.worksImg:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.worksImg:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.workBtn {
+    margin: 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer; /* Set cursor to pointer for better user feedback */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    font-weight: bold;
+}
+.workBtn:hover {
+    background: yellow; /* Change the background color on hover */
+    color: rgb(8, 8, 8); /* Change the text color on hover */
+}
+
+@media screen and (max-width: 585px) {
+    .worksImg { 
+        height: 48vw;
+    }
+}
